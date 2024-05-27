@@ -1,0 +1,446 @@
+/* --- globales --- */
+
+@font-face {
+    font-family: roboto;
+    src:url(../assets/fonts/Roboto-Light.ttf);
+
+}
+
+* {
+    font-family: 'roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    
+}
+
+/* --- títulos --- */
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: lighter;
+}
+
+h1 {
+    font-size: 2rem;
+    color:#004578;
+}
+
+h2 {
+    font-size: 1.5rem;
+    color:#005a9e;
+    padding-bottom: 20px;
+}
+
+h3 {
+    font-size: 1.2rem;
+    color:#106ebe;
+}
+
+h4 {
+    font-size: 1rem;
+    color:#0078d4;
+}
+
+h5 {
+    font-size: 0.9rem;
+    color:#2b88d8;
+    padding-top: 15px;
+}
+
+h6 {
+    font-size: 0.5rem;
+    color:#71afe5;
+}
+
+p {
+    font-size: 1.5rem;
+    color:#788199;
+    
+}
+
+
+/* --- textos por defecto --- */
+
+.text-primary {
+    color: #4b6376 !important;
+}
+
+.text-secondary {
+    color: #04215c !important;
+}
+
+
+/* --- barra de navegación --- */
+
+#navbarS li > a {
+    color: #ffffff;
+
+}
+
+/* --- ----------------------------------- --- */
+/* --- ------- barra de navegación ------- --- */
+/* --- ----------------------------------- --- */
+
+.navbar{
+    background-color: #2d93f3;
+    
+}
+
+
+/* --- ------------------------ --- */
+/* --- ------- carrusel ------- --- */
+/* --- ------------------------ --- */
+
+.carruselV{
+    height: 90% !important;
+
+}
+
+
+/* --- ------------------------- --- */
+/* --- ------- categpría ------- --- */
+/* --- ------------------------- --- */
+
+
+.categoriaV{
+    height: 90% !important;
+    background-color: red;
+}
+
+
+/* --- ----------------------- --- */
+/* --- ------- Niveles ------- --- */
+/* --- ----------------------- --- */
+
+.nivelV{
+    height: 90% !important;
+    background-color: rgb(128, 217, 26);
+}
+
+
+
+
+
+
+/* --- ------------------------ --- */
+/* --- ------- Horarios ------- --- */
+/* --- ------------------------ --- */
+
+
+*{
+    margin: 0;
+    padding: 0;
+    
+    
+}
+
+.horas {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+
+}
+
+.card{
+    position: relative;
+    width: 300px;
+    height: 350px;
+
+}
+
+
+.card .face{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: .5s;
+
+}
+
+.card .front{
+    transform: perspective(600px) rotateY(0deg);
+    box-shadow: 0 5px 10px #5d5e5f2f;
+
+}
+
+.card .front img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card .front h3{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    color: #fff;
+    background: rgba(0, 0, 0, .4);
+    text-align: center;
+}
+
+.card .back{
+    transform: perspective(600px) rotateY(180deg);
+    background: rgb(3, 50, 77);
+    padding: 15px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 12px;
+    text-align: center;
+    box-shadow: 0 5px 10px #89818169;
+}
+
+.card .back .line{
+    border-top: solid 1px #fff;
+    height: 50px;
+    line-height: 50px;
+}
+
+.card .back h3{
+    font-size: 21px;
+    margin-top: 20px;
+    letter-spacing: 1px;
+}
+
+.card .back p{    
+    letter-spacing: .5px;
+}
+
+
+.card:hover .front{
+    transform: perspective(600px) rotateY(180deg);
+}
+
+.card:hover .back{
+    transform: perspective(600px) rotateY(360deg);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* --- ------------------------ --- */
+/* --- ------- footer ------- --- */
+/* --- ------------------------ --- */
+
+footer{
+    height: 30% !important;
+     
+}
+
+.piepage{
+    width: 100%;
+    background-color: #04215c;
+    color: #ffffff;
+    text-align: center;
+}
+
+.piepage .group-1{
+    width: 100%;
+    max-width: auto;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 2.5rem 0rem;
+}
+
+.piepage .group-1 .box figure{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+}
+
+.piepage .group-1 .box figure img{
+    width: 250%; 
+}
+
+.piepage .group-1 .box h2{
+    color: #ffffff;
+    margin-bottom: 25px;
+    font-size: 45px;
+}
+
+.piepage .group-1 .box p{
+    color: #ffffff;
+    margin-bottom: 20px;        
+}
+
+.piepage .group-1 .rrss{
+    display: inline-block;
+    text-decoration: none;
+    width: 245px;
+    height: 245px;
+    line-height: 45px;
+    color: #ffffff;
+    margin-right: 10px;
+    text-align: center;
+    font-size: 4rem;
+    transition: all 300ms ease;
+}
+
+.piepage .group-1 .rrss a:hover{
+    color: #71afe5;
+
+}
+
+.piepage .group-2{
+    background-color: #0078d4;
+    padding: 1rem;
+    text-align: center;
+    color: #ffffff;
+    font-size: 1.2rem;
+
+}
+
+
+
+
+
+/* --- ----------------------------- --- */
+/* --- ------- media queries ------- --- */
+/* --- ----------------------------- --- */
+
+.container,
+.container-fluid,
+.container-xxl,
+.container-xl,
+.container-lg,
+.container-md,
+.container-sm {
+  --bs-gutter-x: 1.5rem;
+  --bs-gutter-y: 0;
+  width: 100%;
+  padding-right: calc(var(--bs-gutter-x) * 0.5);
+  padding-left: calc(var(--bs-gutter-x) * 0.5);
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: 576px) {
+    
+    /* --- ------- containers ------- --- */
+    .container-sm, .container {
+      max-width: 540px;
+      background-color: red;
+    }
+    .container-sm, .carousel-inner {
+        max-height: 30rem;
+    }
+    .container-sm, .carousel-item > img {
+        height: 25rem;
+    }
+
+    /* --- ------- footer ------- --- */
+    .piepage .group-1{
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        padding: 1.5rem 0rem;
+    }
+
+
+
+
+  }
+  @media (min-width: 768px) {
+    .container-md, .container-sm, .container {
+      max-width: 720px;
+      background-color: blueviolet;
+    }
+    .container-md, .carousel-inner {
+        max-height: 35rem;
+    }
+    .container-md, .carousel-item > img {
+        height: 30rem;
+    }
+
+    /* --- ------- footer ------- --- */
+    .piepage .group-1{
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        padding: 1.5rem 0rem;
+    }
+
+  }
+  @media (min-width: 992px) {
+    .container-lg, .container-md, .container-sm, .container {
+      max-width: 960px;
+      background-color: #788199;
+    }
+    .container-lg, .carousel-inner {
+        max-height: 40rem;
+    }
+    .container-lg, .carousel-item > img {
+        height: 35rem;
+    }
+
+    /* --- ------- footer ------- --- */
+    .piepage .group-1{
+        width: 100%;
+        grid-template-columns: repeat(3, 1fr);
+        padding: 2rem 0rem;
+    }
+
+
+  }
+  @media (min-width: 1200px) {
+    .container-xl, .container-lg, .container-md, .container-sm, .container {
+      max-width: 1140px;
+      background-color: #a615e9;
+    }
+    .container-xl, .carousel-inner {
+          max-height: 45rem;
+    }
+    .container-xl, .carousel-item > img {
+          height: 40rem;              
+    }
+
+    /* --- ------- footer ------- --- */
+    .piepage .group-1{
+        width: 100%;
+        grid-template-columns: repeat(3, 1fr);
+        padding: 2.5rem 0rem;
+    }
+    
+  }
+  @media (min-width: 1400px) {
+    .container-xxl, .container-xl, .container-lg, .container-md, .container-sm, .container {
+      max-width: 1320px;
+      /* background-color: #d3fe00; */
+    }
+    .container-xxl, .carousel-inner {
+        max-height: 70rem;
+    }
+    .container-xxl, .carousel-item > img {
+        height: 70rem;              
+    }
+
+
+  }
+  
